@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FA307B5925D3606C00D3B0BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA307B5825D3606C00D3B0BA /* AppDelegate.swift */; };
 		FA307B5B25D3606C00D3B0BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA307B5A25D3606C00D3B0BA /* SceneDelegate.swift */; };
-		FA307B5D25D3606C00D3B0BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA307B5C25D3606C00D3B0BA /* ViewController.swift */; };
 		FA307B6025D3606C00D3B0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA307B5E25D3606C00D3B0BA /* Main.storyboard */; };
 		FA307B6225D3606E00D3B0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA307B6125D3606E00D3B0BA /* Assets.xcassets */; };
 		FA307B6525D3606E00D3B0BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA307B6325D3606E00D3B0BA /* LaunchScreen.storyboard */; };
+		FAAA2E4C25D36F0300C7F621 /* LibraryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA2E4B25D36F0300C7F621 /* LibraryCollectionViewController.swift */; };
+		FAAA2E5025D370FD00C7F621 /* VideosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA2E4F25D370FD00C7F621 /* VideosCollectionViewController.swift */; };
+		FAAA2E5925D3762000C7F621 /* SearchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA2E5825D3762000C7F621 /* SearchCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA307B5525D3606C00D3B0BA /* Take Home Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take Home Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA307B5825D3606C00D3B0BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA307B5A25D3606C00D3B0BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA307B5C25D3606C00D3B0BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA307B5F25D3606C00D3B0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA307B6125D3606E00D3B0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA307B6425D3606E00D3B0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA307B6625D3606E00D3B0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAA2E4B25D36F0300C7F621 /* LibraryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewController.swift; sourceTree = "<group>"; };
+		FAAA2E4F25D370FD00C7F621 /* VideosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosCollectionViewController.swift; sourceTree = "<group>"; };
+		FAAA2E5825D3762000C7F621 /* SearchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		FA307B5725D3606C00D3B0BA /* Take Home Practice */ = {
 			isa = PBXGroup;
 			children = (
-				FA307B5825D3606C00D3B0BA /* AppDelegate.swift */,
-				FA307B5A25D3606C00D3B0BA /* SceneDelegate.swift */,
-				FA307B5C25D3606C00D3B0BA /* ViewController.swift */,
-				FA307B5E25D3606C00D3B0BA /* Main.storyboard */,
-				FA307B6125D3606E00D3B0BA /* Assets.xcassets */,
-				FA307B6325D3606E00D3B0BA /* LaunchScreen.storyboard */,
+				FAAA2E5525D372A200C7F621 /* App Life Cycle */,
+				FAAA2E5325D3727800C7F621 /* Views */,
 				FA307B6625D3606E00D3B0BA /* Info.plist */,
 			);
 			path = "Take Home Practice";
+			sourceTree = "<group>";
+		};
+		FAAA2E5325D3727800C7F621 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA2E4F25D370FD00C7F621 /* VideosCollectionViewController.swift */,
+				FAAA2E4B25D36F0300C7F621 /* LibraryCollectionViewController.swift */,
+				FAAA2E5825D3762000C7F621 /* SearchCollectionReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAAA2E5525D372A200C7F621 /* App Life Cycle */ = {
+			isa = PBXGroup;
+			children = (
+				FA307B5825D3606C00D3B0BA /* AppDelegate.swift */,
+				FA307B5A25D3606C00D3B0BA /* SceneDelegate.swift */,
+				FA307B6325D3606E00D3B0BA /* LaunchScreen.storyboard */,
+				FA307B5E25D3606C00D3B0BA /* Main.storyboard */,
+				FA307B6125D3606E00D3B0BA /* Assets.xcassets */,
+			);
+			path = "App Life Cycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA307B5D25D3606C00D3B0BA /* ViewController.swift in Sources */,
 				FA307B5925D3606C00D3B0BA /* AppDelegate.swift in Sources */,
+				FAAA2E5925D3762000C7F621 /* SearchCollectionReusableView.swift in Sources */,
+				FAAA2E4C25D36F0300C7F621 /* LibraryCollectionViewController.swift in Sources */,
+				FAAA2E5025D370FD00C7F621 /* VideosCollectionViewController.swift in Sources */,
 				FA307B5B25D3606C00D3B0BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
